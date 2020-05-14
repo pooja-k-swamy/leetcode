@@ -1,7 +1,7 @@
 class Solution:
     def createTargetArray(self, nums: List[int], index: List[int]) -> List[int]:
         target = []
-        for num, ind in zip(nums, index):
-            target.insert(ind, num)
+        for i in range(len(nums)):
+            target.insert(index[i], nums[i])
             print(target)
         return target
